@@ -1,0 +1,431 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	font-family: Avenir, Arial, helvetica, sans-serif;
+	background-color: white;	
+}
+
+.wrapper{
+	display: flex;
+	position: relative;
+
+}
+
+.heading{
+	padding: 20px;
+}
+
+.navbar{
+	
+	position:fixed;
+	width: 25vw;
+	height: 100%;
+	/*background: #f2f4f7;*/
+	padding: 23px;
+	z-index: 1;
+	
+}
+	
+.navbar h2{
+	color: #7c7c7c;
+	
+}
+.navbar ul li{
+	padding: 8px;
+	margin: 8px;
+	/*border-bottom: 1px solid #E5E5E5;*/
+}	
+.navbar ul li a {
+	text-decoration: none;
+	color: #cbcaca;
+	z-index: 100
+}
+.navbar ul li a:hover {
+	color: #7c7c7c;
+	transition: 0.8s;
+}
+	
+.one::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.one:hover::after{
+	width: 100%;
+	transition: width 1s;
+}
+
+.two2{
+	color: #CBCACA;
+	z-index: 200;
+	font-weight: 100;
+}	
+.two::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+	
+}
+.two:hover::after{
+	width: 100%;
+	transition: width 1s;
+	font-weight: 100;
+
+}
+
+.two1{
+	color: #7C7C7C;
+	z-index: 200;
+}
+.two1::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.two1:hover::after{
+	width: 100%;
+	transition: width 1s;
+}
+
+.linewidth{
+	font-weight: 100;
+	
+}
+
+.two2::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.two2:hover::after{
+	width: 100%;
+	transition: width 1s;
+}
+.grid{
+	position:absolute;
+	display: grid;
+	grid-template-columns: 25vw 1px 74vw;
+	grid-template-rows: 80px 1px 30px 75vw
+						80px 1px 30px 30px 30px/* Contact me*/
+						80px 1px 30px 100px 100px 21vw 60px 76px 100px  /* FYP */
+						80px 1px 30px 100px 100px 44vw 80px 28vw 80px 33vw 60px 120px 44vw 100px	/* GBDP */
+						80px 1px 30px 30px 30px  100px 48.5vw 40px 120px 37.5vw 60px 76px 76px 76px 100px   /* Business*/
+						80px 1px 30px 70px 26vw	100px /* Design optermisation*/		
+					    80px 1px 30px 70px 60px 32.5vw 30px 42vw 40px 80px 44vw 40px 70px 46vw 100px    /* UCD */
+						80px 1px 30px 90px 60px 34vw 40px 100px 44vw 60px 44vw 40px 40px 39vw 30px 41vw 100px /* Y2 Design */
+						80px 1px 30px 70px 50px 83vh 30px 70px 49vw 30px 70px 41vw 30px 70px 28vw 0px 28vw 0vw 28vw 100px  /* mechatronics */
+						80px 1px 30px 100px 43.5vw 60px 43.5vw 60px  /* shaft */
+						80px 1px 30px 70px 60px 25vw 60px 35vw   /* bike */
+						80px 1px 30px 70px 30px 26vw 60px 26vw 60px 26vw 60px 26vw 60px   /* reverse */
+						80px 1px 30px 33.5vw 35vw 100px 28vw 60px  /* Carpentry */
+						80px 1px 30px 70px 10px 25vw 400px   /* Costing */
+
+;
+}
+
+.l1{
+	background-color:  #7C7C7C;
+}
+.li1{
+	margin-left: 1vw;
+	padding-top: 43px; 
+	background-color: white;
+	color: #7c7c7c;
+}
+.li2{
+	margin-left: 2.7vw;
+	padding-top: 43px; 
+	background-color: white;
+	color: #7c7c7c;
+}
+
+.innergrid{
+	display: grid;
+	grid-template-columns: 1fr 147px;
+}
+.innergrid2{
+	display: grid;
+	grid-template-columns: 1fr 170px 170px 237px;
+}
+.innergrid3{
+	display: grid;
+	grid-template-columns: 1fr 170px 166px;
+}
+.innergrid4{
+	display: grid;
+	grid-template-columns: 1fr 158px;
+}
+
+
+
+.innercell 	{
+	padding-top: 50px; 
+	color: #cbcaca;
+	background-color: white;
+	padding-right: 33px;
+}
+.innercell::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.innercell:hover::after{
+	width: 100%;
+	transition: width 1s;
+}
+.innercell a{
+	color: #cbcaca;
+	transition: 0.8s;
+}
+.innercell a:hover {
+	color: #7c7c7c;
+	transition: 0.8s;
+}
+
+
+.innercellpdf 	{
+	padding-top: 50px; 
+	color: #cbcaca;
+	background-color: white;
+	padding-right: 33px;
+}
+.innercellpdf::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.innercellpdf:hover::after{
+	width: 83%;
+	transition: width 1s;
+}
+.innercellpdf a{
+	color: #cbcaca;
+	transition: 0.8s;
+}
+.innercellpdf a:hover {
+	color: #7c7c7c;
+	transition: 0.8s;
+}
+
+
+
+.innercellpdf2 	{
+	padding-top: 50px; 
+	color: #cbcaca;
+	background-color: white;
+	padding-right: 33px;
+}
+.innercellpdf2::after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	transition: width 0.8s;
+	background: #7c7c7c;
+}
+.innercellpdf2:hover::after{
+	width: 67%;
+	transition: width 1s;
+}
+.innercellpdf2 a{
+	color: #cbcaca;
+	transition: 0.8s;
+}
+.innercellpdf2 a:hover {
+	color: #7c7c7c;
+	transition: 0.8s;
+}
+
+
+.underline{
+	background-color: #cbcaca;
+	margin-left: 1vw;
+}
+.subheading{
+	margin-left: 2.7vw;
+	padding-top: 20px; 
+	background-color: white;
+	color: #7c7c7c;
+}
+.subheading2{
+	margin-left: 2.7vw;
+	padding-top: 30px; 
+	background-color: white;
+	color: #7c7c7c;
+}
+.UCDbody{
+	object-fit: cover;
+	width: 73vw;
+	margin-left: 1vw;	
+}
+.UCDbody1{
+	object-fit: cover;
+	width: 69.5vw;
+	margin-left: 2.7vw;	
+}
+.UCDbody2{
+	object-fit: cover;
+	width: 35vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+.UCDbody3{
+	object-fit: cover;
+	width: 100%;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+.UCDbody4{
+	object-fit: cover;
+	width: 100%;
+	margin-left: 2.7vw;	
+	align-content: center;
+	padding-right: 10px;
+}
+.UCDbody5{
+	object-fit: cover;
+	width: 50vw;
+	margin-left: 59px;	
+	align-content: center;
+}
+
+.UCDbody6{
+	object-fit: cover;
+	width: 51vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+
+.UCDbody7{
+	object-fit: cover;
+	width: 19.1vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+
+.UCDbody8{
+	object-fit: cover;
+	width: 60vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+
+.UCDbody9{
+	object-fit: cover;
+	width: 48.6vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+.UCDbody10{
+	object-fit: cover;
+	width: 21.6vw;
+	margin-left: 2.7vw;	
+	align-content: center;
+}
+
+.subgrid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.subgrid2{
+	display: grid;
+	grid-template-columns: 5vw 23vw 37vw 5vw;
+}
+.subgrid3{
+	display: grid;
+	grid-template-columns: 33vw 37vw;
+}
+.subgrid4{
+	display: grid;
+	grid-template-columns: 25.42vw 44.58vw;
+}
+.subgrid5{
+	display: grid;
+	grid-template-columns: 35vw 35vw;
+}
+.subgrid6{
+	display: grid;
+	grid-template-columns: 52vw 18vw;
+}
+
+.subgrid7{
+	display: grid;
+	grid-template-columns: 20vw 50vw;
+}
+.subgrid8{
+	display: grid;
+	grid-template-columns: 5vw 35vw 30vw 5vw;
+}
+.subgrid9{
+	display: grid;
+	grid-template-columns: 17.5vw 17.5vw 17.5vw 17.5vw;
+}
+.subgrid10{
+	display: grid;
+	grid-template-columns: 35vw 30vw 5vw;
+}
+
+.subgrid11{
+	display: grid;
+	grid-template-columns: 49.6vw 28vw;
+}
+.subgrid12{
+	display: grid;
+	grid-template-columns: 22.6vw 49.6vw;
+}
+
+.video{
+	position: relative;
+	height: 80vh;
+	width: 24.3vw;
+	align-content: center;
+}
+
+
+.innergridtext{
+	display: grid;
+	grid-template-columns: 1fr 100px 200px;
+}
+
+.text{
+	color:#7C7C7C;
+	margin-left: 43px;
+	text-align: justify;
+  	text-justify: inter-word;
+}
+.duration{
+	color: #7c7c7c;
+}
+.figure{
+	font-style: italic;
+	color: #7c7c7c;
+	text-align: center;
+}
